@@ -1,11 +1,10 @@
-<div><span>id: </span>{{rant.id}}</div>
-<div><span>likes: </span>{{rant.likes}}</div>
-<div><span>rant: </span>{{rant.rantmsg}}</div>
+<div class="rant-page">
+  <h1>{{title}}</h1>
+  <div class="textBox">
+    <input type="text" #rantinput class="input-lg" id="" placeholder="my rant">
+  </div>
+  <div>
+  <a class="btn rounded-btn" (click)='onRant(rantinput.value)'> Rant </a>
+  </div>
 
-<div>
-  <label>rants:
-    <input [ngModel] placeholder="rant here" name="rantbox">
-  </label>
 </div>
-
-<div><span>rantbox: </span>{{ranttitle}}</div>

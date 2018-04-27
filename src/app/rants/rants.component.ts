@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Rant } from '../rants';
+import { Rants } from '../rants';
+import { RANTS } from '../mock-rants';
 
 @Component({
   selector: 'app-rants',
@@ -9,11 +10,6 @@ import { Rant } from '../rants';
 
 export class RantsComponent implements OnInit {
 
-  rant: Rant = {
-    id: 1,
-    likes: 10,
-    rantmsg: 'this is a rant'
-  }
 
 
 

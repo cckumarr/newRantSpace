@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { RantsComponent } from './rants/rants.component';
 import { RantDetailComponent } from './rant-detail/rant-detail.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

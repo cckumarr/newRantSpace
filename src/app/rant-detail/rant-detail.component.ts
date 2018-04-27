@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Rant } from '../rants';
+import { Rants } from '../rants';
 
 @Component({
   selector: 'app-rant-detail',
