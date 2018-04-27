@@ -8,7 +8,7 @@
 	bottom: 0;
 	overflow: auto;
 	text-align: center;
-	color: #fff;
+	color: #bbb;
 	padding: 3em;
 	.col-lg-4 {
 		padding :0;
@@ -23,6 +23,14 @@
         line-height: 1.3333333;
         border-radius: 0;
     }
+    .input-underline {
+    	    background: 0 0;
+    	    border: none;
+    	    box-shadow: none;
+    	    border-bottom: 2px solid rgba(255,255,255,.5);
+    	    color: #FFF;
+    	    border-radius: 0;
+    	}
 	h1 {
   		font-weight: 300;
   		margin-top: 20px;
@@ -38,10 +46,24 @@
       -webkit-border-radius: 50px;
             border-radius: 50px;
       color: rgba(255,255,255,0.8);
-      background: $brand-primary;
+      background: #2c3e50;;
       border: 2px solid rgba(255,255,255,0.8);
       font-size: 18px;
         line-height: 40px;
         padding: 0 25px;
    }
+   .rounded-btn:hover,.rounded-btn:focus,.rounded-btn:active,.rounded-btn:visited{
+   		color: rgba(255,255,255,1);
+   		border: 2px solid rgba(255,255,255,1);
+   		outline: none;
+   	}
+
+   	.jumbotronm-b-0{
+    		text-align: center;
+    		background: $brand-primary;
+    	}
+
+    	ul {
+      	list-style-type: none;
+    	}
 }

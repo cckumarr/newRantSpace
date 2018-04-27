@@ -10,12 +10,23 @@ import { RANTS } from '../mock-rants';
 
 export class RantsComponent implements OnInit {
 
+  rants= RANTS;
 
-
+  onSelect(rant:Rants){
+    this.rants.likes = rant.likes++;
+  }
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onRant(rantInput:string){
+  	this.rants.push({
+  		id : 654,
+  		likes : 0,
+  		rantMsg : rantInput
+  	})
   }
 
 }

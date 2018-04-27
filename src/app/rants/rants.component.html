@@ -3,8 +3,30 @@
   <div class="textBox">
     <input type="text" #rantinput class="input-lg" id="" placeholder="my rant">
   </div>
-  <div>
-  <a class="btn rounded-btn" (click)='onRant(rantinput.value)'> Rant </a>
+  <div class="button">
+    <p><button type="button" class="btn rounded-btn" (click)='onRant(rantinput.value)'> Rant </button></p>
   </div>
+
+  <ul class="mx-auto rants">
+    <li *ngFor = "let rant1 of rants">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-primary card-inverse">
+              <!-- <span class="card-title">Jumbotron</span> -->
+            </div>
+            <div class="card-block">
+              <!-- Main jumbotron for a primary marketing message or call to action -->
+              <div class="jumbotronm-b-0">
+                <p>{{rant1.rantMsg}}</p>
+                <!-- <p><a href="javascript:;" class="btn btn-primary btn-sm" role="button">like   <span class="badge badge-light">4</span></a> -->
+                <p><button type="button" class="btn rounded-btn" (click)='onSelect(rant1)'>like <span class="badge badge-light">{{rant1.likes}}</span></button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
 
 </div>
