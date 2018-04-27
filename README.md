@@ -17,7 +17,7 @@ Install node
 brew install node
 ```
 
-In the installed folder
+In the folder that the code was cloned into
 
 ```
 npm install
