@@ -29,3 +29,7 @@ npm start
 ```
 
 If  you dont have home brew installed checkout [homebrew](https://brew.sh/).
+  
+  
+
+[![HitCount](http://hits.dwyl.io/cckumarr/rantspace.svg)](http://hits.dwyl.io/cckumarr/rantspace)
